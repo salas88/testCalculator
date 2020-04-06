@@ -19,14 +19,10 @@
         </div>
     </form>
 
-    <a th:href="@{/back}">Назад</a>
-    <button type="button">Вперед</button>
-
-    <div th:each="entry, stats : ${rrExsp}">
-        <span th:text="${entry.key}"> </span>
-
-
+    <div th:if="${message != null}">
+        <span th:text="${message}"></span>
     </div>
+
 </body>
 
 </html>
